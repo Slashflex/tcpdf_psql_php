@@ -15,7 +15,6 @@ function fetch_data()
 {
     $output = '';
     $db = Connection::get()->connect();
-    // $connect = mysqli_connect("localhost", "root", "", "testing");
     $response = $db->query("SELECT * FROM tbl_employee ORDER BY id ASC");
     $result = $response->fetchAll();
 
